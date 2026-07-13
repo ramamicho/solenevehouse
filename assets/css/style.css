@@ -571,3 +571,94 @@ button:hover{
 
 }
 ```
+```css
+/* ========================= */
+/* MENU MOBILE */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+    .navbar{
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:rgba(15,23,42,.96);
+
+        backdrop-filter:blur(20px);
+
+        max-height:0;
+
+        overflow:hidden;
+
+        transition:max-height .4s ease;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+    }
+
+    .navbar.active{
+
+        max-height:420px;
+
+    }
+
+    .navbar ul{
+
+        flex-direction:column;
+
+        gap:0;
+
+        padding:20px 0;
+
+    }
+
+    .navbar li{
+
+        width:100%;
+
+    }
+
+    .navbar a{
+
+        display:block;
+
+        padding:18px 30px;
+
+        transition:.3s;
+
+    }
+
+    .navbar a:hover{
+
+        background:rgba(255,255,255,.06);
+
+        color:var(--accent);
+
+        padding-left:40px;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+        font-size:32px;
+
+        transition:.3s;
+
+    }
+
+    .menu-toggle.active{
+
+        transform:rotate(90deg);
+
+    }
+
+}
+```
