@@ -113,3 +113,93 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+/* =====================================================
+   SCRIPT.JS - PARTE 2
+   ANIMAZIONI
+=====================================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* ==========================
+       ELEMENTI DA ANIMARE
+    ========================== */
+
+    const animatedElements = document.querySelectorAll(
+        ".card, .advantage, .experience-card, .contact-card, .about-image, .gallery-grid img"
+    );
+
+    /* Stato iniziale */
+
+    animatedElements.forEach(el => {
+
+        el.style.opacity = "0";
+        el.style.transform = "translateY(40px)";
+        el.style.transition = "opacity .8s ease, transform .8s ease";
+
+    });
+
+    /* ==========================
+       INTERSECTION OBSERVER
+    ========================== */
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+
+        threshold: 0.15
+
+    });
+
+    animatedElements.forEach(el => observer.observe(el));
+
+    /* ==========================
+       ANIMAZIONE TITOLI
+    ========================== */
+
+    const titles = document.querySelectorAll(".section-title");
+
+    titles.forEach(title => {
+
+        title.style.opacity = "0";
+        title.style.transform = "translateY(30px)";
+        title.style.transition = "all .8s ease";
+
+    });
+
+    const titleObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+
+                titleObserver.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+
+        threshold: 0.20
+
+    });
+
+    titles.forEach(title => titleObserver.observe(title));
+
+});
