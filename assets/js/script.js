@@ -203,3 +203,79 @@ document.addEventListener("DOMContentLoaded", () => {
     titles.forEach(title => titleObserver.observe(title));
 
 });
+/* =====================================================
+   SCRIPT.JS - PARTE 3
+   GALLERY LIGHTBOX
+=====================================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* ==========================
+       LIGHTBOX
+    ========================== */
+
+    const galleryImages = document.querySelectorAll(".gallery-grid img");
+
+    if (galleryImages.length > 0) {
+
+        const overlay = document.createElement("div");
+        overlay.className = "lightbox";
+
+        overlay.innerHTML = `
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-image" src="" alt="">
+        `;
+
+        document.body.appendChild(overlay);
+
+        const lightboxImage = overlay.querySelector(".lightbox-image");
+        const closeButton = overlay.querySelector(".lightbox-close");
+
+        galleryImages.forEach(image => {
+
+            image.addEventListener("click", () => {
+
+                lightboxImage.src = image.src;
+                lightboxImage.alt = image.alt;
+
+                overlay.classList.add("active");
+
+                document.body.style.overflow = "hidden";
+
+            });
+
+        });
+
+        function closeLightbox() {
+
+            overlay.classList.remove("active");
+
+            document.body.style.overflow = "";
+
+        }
+
+        closeButton.addEventListener("click", closeLightbox);
+
+        overlay.addEventListener("click", (e) => {
+
+            if (e.target === overlay) {
+
+                closeLightbox();
+
+            }
+
+        });
+
+        document.addEventListener("keydown", (e) => {
+
+            if (e.key === "Escape") {
+
+                closeLightbox();
+
+            }
+
+        });
+
+    }
+
+});
