@@ -1,35 +1,115 @@
-```javascript
-// ==============================
-// SOLENEVEHOUSE PREMIUM
-// ==============================
+/* =====================================================
+   SOLENEVEHOUSE
+   SCRIPT.JS - PARTE 1
+=====================================================*/
 
-const menuButton = document.querySelector(".menu-toggle");
-const navbar = document.querySelector(".navbar");
+document.addEventListener("DOMContentLoaded", () => {
 
-menuButton.addEventListener("click", () => {
+    /* ==========================
+       ELEMENTI
+    ========================== */
 
-    navbar.classList.toggle("active");
-    menuButton.classList.toggle("active");
+    const header = document.querySelector(".header");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+    const backToTop = document.querySelector(".back-to-top");
 
-    if (navbar.classList.contains("active")) {
-        menuButton.innerHTML = "✕";
-    } else {
-        menuButton.innerHTML = "☰";
+    /* ==========================
+       HEADER SCROLL
+    ========================== */
+
+    function updateHeader() {
+
+        if (window.scrollY > 80) {
+
+            header.classList.add("scrolled");
+
+        } else {
+
+            header.classList.remove("scrolled");
+
+        }
+
     }
 
-});
+    updateHeader();
 
-// Chiude il menu dopo il click su un link
+    window.addEventListener("scroll", updateHeader);
 
-document.querySelectorAll(".navbar a").forEach(link => {
+    /* ==========================
+       MENU MOBILE
+    ========================== */
 
-    link.addEventListener("click", () => {
+    if (menuToggle && navbar) {
 
-        navbar.classList.remove("active");
-        menuButton.classList.remove("active");
-        menuButton.innerHTML = "☰";
+        menuToggle.addEventListener("click", () => {
+
+            navbar.classList.toggle("active");
+
+        });
+
+    }
+
+    /* ==========================
+       CHIUSURA MENU
+    ========================== */
+
+    document.querySelectorAll(".navbar a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navbar.classList.remove("active");
+
+        });
+
+    });
+
+    /* ==========================
+       PULSANTE TORNA SU
+    ========================== */
+
+    function updateBackToTop() {
+
+        if (!backToTop) return;
+
+        if (window.scrollY > 500) {
+
+            backToTop.classList.add("show");
+
+        } else {
+
+            backToTop.classList.remove("show");
+
+        }
+
+    }
+
+    updateBackToTop();
+
+    window.addEventListener("scroll", updateBackToTop);
+
+    /* ==========================
+       SCROLL FLUIDO
+    ========================== */
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+        anchor.addEventListener("click", function (e) {
+
+            const target = document.querySelector(this.getAttribute("href"));
+
+            if (!target) return;
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
+        });
 
     });
 
 });
-```
