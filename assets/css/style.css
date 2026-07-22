@@ -12,11 +12,11 @@
     --accent-light:#E7C766;
 
     --white:#ffffff;
-    --text:#E2E8F0;
-    --gray:#CBD5E1;
+    --text:#1f2937;
+    --gray:#475569;
 
-    --glass:rgba(255,255,255,.08);
-    --glass-border:rgba(255,255,255,.18);
+    --glass:rgba(255,255,255,.85);
+    --glass-border:rgba(0,0,0,.08);
 
     --radius:22px;
     --shadow:0 15px 40px rgba(0,0,0,.25);
@@ -78,7 +78,7 @@ h2{
     text-align:center;
     font-size:2.4rem;
     margin-bottom:50px;
-    color:white;
+    color:#0F172A;
 
 }
 
