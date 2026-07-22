@@ -190,10 +190,6 @@ p{
 /* HERO */
 /* ========================= */
 
-/* ========================= */
-/* HERO */
-/* ========================= */
-
 .hero{
 
     position:relative;
@@ -226,11 +222,16 @@ p{
 
     animation:fadeUp 1s ease;
 
-}
-
 .hero h1{
 
-    font-size:4rem;
+    font-size:4.5rem;
+
+    font-weight:800;
+
+    color:#fff;
+
+    text-shadow:
+        0 4px 18px rgba(0,0,0,.55);
 
     margin-bottom:25px;
 
