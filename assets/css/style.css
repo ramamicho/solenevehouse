@@ -41,13 +41,10 @@ body{
 
     font-family:'Poppins',sans-serif;
 
-    color:var(--text);
+    color:#1f2937;
 
     background:
-    radial-gradient(circle at top left,#1e293b,#0f172a 55%),
-    linear-gradient(135deg,#111827,#0F172A);
-
-    min-height:100vh;
+    linear-gradient(180deg,#f8fafc 0%, #eef4f8 100%);
 
     overflow-x:hidden;
 
