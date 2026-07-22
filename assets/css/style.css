@@ -192,6 +192,13 @@ p{
 
 .hero{
 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.hero{
+
     position:relative;
 
     min-height:100vh;
@@ -251,35 +258,22 @@ p{
 
 }
 
-.btn{
+.btn-secondary{
 
     display:inline-block;
-
-    padding:18px 42px;
-
-    border-radius:100px;
-
-    background:#C9A227;
-
+    padding:16px 36px;
+    border:2px solid #C9A227;
     color:#fff;
-
+    border-radius:100px;
     text-decoration:none;
-
-    font-weight:700;
-
-    letter-spacing:.4px;
-
-    transition:.35s;
-
-    box-shadow:0 15px 30px rgba(201,162,39,.35);
+    margin-left:15px;
+    transition:.3s;
 
 }
 
-.btn:hover{
+.btn-secondary:hover{
 
-    transform:translateY(-5px);
-
-    background:#D8B646;
+    background:#C9A227;
 
 }
 
