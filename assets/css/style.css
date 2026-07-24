@@ -525,31 +525,17 @@ button:hover{
 /* RESPONSIVE */
 /* ========================= */
 
-@media(max-width:900px){
-
-    .cards{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .hero h1{
-
-        font-size:2.8rem;
-
-    }
+@media (max-width:900px){
 
     .navbar{
-
         display:none;
-
     }
 
     .menu-toggle{
-
         display:block;
-
     }
+
+}
 
     .about .container,
     .services .container,
