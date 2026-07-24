@@ -120,16 +120,30 @@ p{
 
 .logo{
 
-    color:white;
+    display:flex;
+
+    align-items:center;
 
     text-decoration:none;
 
-    font-size:1.6rem;
+}
+.logo img{
 
-    font-weight:700;
+    height:60px;
+
+    width:auto;
+
+    display:block;
+
+    transition:.3s;
 
 }
 
+.logo img:hover{
+
+    transform:scale(1.05);
+
+}
 .logo span{
 
     color:var(--accent);
