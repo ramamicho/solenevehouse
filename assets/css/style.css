@@ -118,23 +118,32 @@ p{
 
 }
 
+/* ===========================
+   LOGO
+=========================== */
+
 .logo{
 
     display:flex;
 
     align-items:center;
 
+    gap:18px;
+
     text-decoration:none;
 
-    z-index:1001;
+    z-index:1000;
 
 }
 
 .logo img{
 
     height:95px;
+
     width:auto;
+
     display:block;
+
     transition:.35s;
 
 }
@@ -142,6 +151,44 @@ p{
 .logo img:hover{
 
     transform:scale(1.05);
+
+}
+
+.logo-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.logo-title{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    color:#F4E7C5;
+
+    line-height:1;
+
+}
+
+.logo-subtitle{
+
+    margin-top:6px;
+
+    font-size:.85rem;
+
+    letter-spacing:3px;
+
+    color:#C9A227;
+
+    text-transform:uppercase;
 
 }
 .navbar ul{
