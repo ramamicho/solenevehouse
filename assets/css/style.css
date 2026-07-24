@@ -6,22 +6,17 @@
 
 :root{
 
-    --primary:#0F172A;
-    --secondary:#1E293B;
+    --primary:#23415E;
+    --secondary:#4A6A84;
+
     --accent:#C9A227;
-    --accent-light:#E7C766;
+    --accent-light:#E8C96D;
 
-    --white:#ffffff;
-    --text:#1f2937;
-    --gray:#475569;
+    --background:#F7F8FA;
+    --surface:#FFFFFF;
 
-    --glass:rgba(255,255,255,.85);
-    --glass-border:rgba(0,0,0,.08);
-
-    --radius:22px;
-    --shadow:0 15px 40px rgba(0,0,0,.25);
-
-    --transition:.35s ease;
+    --text:#243447;
+    --gray:#5E6C7B;
 
 }
 
