@@ -109,12 +109,12 @@ p{
 .header .container{
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    padding:18px 0;
+    min-height:95px;
+
+    padding:0;
 
 }
 
@@ -126,16 +126,16 @@ p{
 
     text-decoration:none;
 
+    z-index:1001;
+
 }
+
 .logo img{
 
-    height:90px;
-
+    height:95px;
     width:auto;
-
     display:block;
-
-    transition:.3s;
+    transition:.35s;
 
 }
 
@@ -144,12 +144,6 @@ p{
     transform:scale(1.05);
 
 }
-.logo span{
-
-    color:var(--accent);
-
-}
-
 .navbar ul{
 
     display:flex;
