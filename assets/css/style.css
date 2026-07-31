@@ -1921,3 +1921,40 @@ RESPONSIVE
 
 
 }
+
+/* ===========================================
+   RISTORANTI - TELEFONO
+=========================================== */
+
+.restaurant-phone {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    background: #8b6f47;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.restaurant-phone:hover {
+
+    background: #6f5635;
+
+    transform: translateY(-2px);
+
+}
