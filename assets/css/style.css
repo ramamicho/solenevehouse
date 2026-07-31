@@ -359,15 +359,13 @@ MENU MOBILE
 
     position:relative;
 
-    min-height:100vh;
-
     display:flex;
 
     align-items:center;
 
-    justify-content:center;
+    min-height:100vh;
 
-    overflow:hidden;
+    color:#fff;
 
 }
 
