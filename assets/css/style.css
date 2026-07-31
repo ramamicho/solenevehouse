@@ -1040,6 +1040,100 @@ GALLERY
 
 }
 
+/* ===========================================
+   RISTORANTI
+=========================================== */
+
+
+.restaurants {
+
+    padding:90px 0;
+
+    background:#faf8f3;
+
+}
+
+
+.restaurants-grid {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.restaurant-card {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+
+    transition:.3s;
+
+}
+
+
+
+.restaurant-card:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.restaurant-card h3 {
+
+    margin-bottom:15px;
+
+    color:#8b6f47;
+
+}
+
+
+
+.restaurant-card p {
+
+    color:#555;
+
+    line-height:1.7;
+
+}
+
+
+
+.restaurant-card span {
+
+    display:block;
+
+    margin-top:20px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+
+
+@media(max-width:900px){
+
+.restaurants-grid {
+
+grid-template-columns:1fr;
+
+}
+
+}
+
 /*=====================================================
 QUOTE
 =====================================================*/
