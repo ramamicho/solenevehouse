@@ -151,7 +151,6 @@
 <h3> Natura</h3>
     
 <p>Punto di partenza di numerosi sentieri</p>
-</div>
 
 </div>
 
@@ -607,7 +606,7 @@
 
             <span>Contattaci</span>
 
-            <h2>Prenota il tuo soggiorno</h2>
+            <h2>Richiedi informazioni sul tuo soggiorno</h2>
 
             <p>
 
@@ -666,18 +665,68 @@
 
             </div>
 
-           <form action="https://formsubmit.co/ramamico@libero.it" method="POST">
+<form action="https://formsubmit.co/ramamico@libero.it" method="POST">
 
-    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="text" 
+           name="nome" 
+           placeholder="👤 Nome" 
+           required>
 
-    <input type="text" name="cognome" placeholder="Cognome" required>
+    <input type="text" 
+           name="cognome" 
+           placeholder="👤 Cognome" 
+           required>
 
-    <input type="email" name="email" placeholder="Email" required>
+    <input type="email" 
+           name="email" 
+           placeholder="📧 Email" 
+           required>
 
-    <textarea name="messaggio" placeholder="Scrivi il tuo messaggio..." required></textarea>
+    <input type="tel" 
+           name="telefono" 
+           placeholder="📞 Telefono">
 
-    <button type="submit">Invia richiesta</button>
+    <label>📅 Check-in</label>
+    <input type="date" 
+           name="checkin" 
+           required>
 
+    <label>📅 Check-out</label>
+    <input type="date" 
+           name="checkout" 
+           required>
+
+    <input type="number" 
+           name="ospiti" 
+           placeholder="👥 Numero ospiti"
+           min="1"
+           max="4"
+           required>
+
+    <textarea name="messaggio" 
+              placeholder="💬 Messaggio / Richieste particolari"
+              rows="5"></textarea>
+
+
+    <label class="privacy">
+
+        <input type="checkbox" required>
+
+        Accetto la privacy policy
+
+    </label>
+
+
+    <input type="hidden" name="_subject" 
+           value="Nuova richiesta soggiorno Solenevehouse">
+
+
+    <button type="submit">
+        📩 Richiedi informazioni
+    </button>
+<p class="form-note">
+    Ti risponderemo il prima possibile per verificare la disponibilità.
+</p>
 </form>
 
         </div>
