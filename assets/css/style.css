@@ -1581,4 +1581,36 @@ RESPONSIVE
     }
 
 }
+.hidden{
 
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.navbar a.active{
+
+    color:var(--accent);
+
+}
+
+.back-to-top{
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transform:translateY(20px);
+
+}
