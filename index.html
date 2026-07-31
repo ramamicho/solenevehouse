@@ -667,6 +667,84 @@
 
 <form action="https://formsubmit.co/ramamico@libero.it" method="POST">
 
+    <!-- Oggetto della mail che ricevi -->
+    <input type="hidden" name="_subject" value="Nuova richiesta soggiorno - Solenevehouse">
+
+    <!-- Risposta automatica al cliente -->
+    <input type="hidden" name="_autoresponse" value="Grazie per aver contattato Solenevehouse. Abbiamo ricevuto la tua richiesta e ti risponderemo al più presto con tutte le informazioni sulla disponibilità e sul soggiorno.">
+
+    <!-- Evita la pagina standard di FormSubmit -->
+    <input type="hidden" name="_next" value="https://www.solenevehouse.it/grazie.html">
+
+    <!-- Protezione antispam -->
+    <input type="hidden" name="_captcha" value="true">
+
+
+    <input type="text" 
+           name="nome" 
+           placeholder="👤 Nome" 
+           required>
+
+
+    <input type="text" 
+           name="cognome" 
+           placeholder="👤 Cognome" 
+           required>
+
+
+    <input type="email" 
+           name="email" 
+           placeholder="📧 Email" 
+           required>
+
+
+    <input type="tel" 
+           name="telefono" 
+           placeholder="📞 Telefono">
+
+
+    <label>📅 Check-in</label>
+
+    <input type="date" 
+           name="checkin" 
+           required>
+
+
+    <label>📅 Check-out</label>
+
+    <input type="date" 
+           name="checkout" 
+           required>
+
+
+    <input type="number" 
+           name="ospiti" 
+           placeholder="👥 Numero ospiti"
+           min="1"
+           max="4"
+           required>
+
+
+    <textarea name="messaggio"
+              placeholder="💬 Messaggio / Richieste particolari">
+    </textarea>
+
+
+    <label class="privacy">
+
+        <input type="checkbox" required>
+
+        Accetto la privacy policy
+
+    </label>
+
+
+    <button type="submit">
+        📩 Richiedi informazioni
+    </button>
+
+
+</form>
     <input type="text" 
            name="nome" 
            placeholder="👤 Nome" 
