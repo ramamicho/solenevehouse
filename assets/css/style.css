@@ -361,7 +361,9 @@ MENU MOBILE
 
 .hero{
 
-    padding-top:130px;
+    min-height:100vh;
+
+    padding-top:170px;
 
 }
 
