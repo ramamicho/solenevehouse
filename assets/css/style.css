@@ -357,13 +357,29 @@ MENU MOBILE
 }
 
 .hero-location{
-    display:block;
-    width:100%;
-    text-align:right;
-    font-size:1.2rem;
+
+    position:absolute;
+
+    top:170px;
+
+    right:60px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    color:#fff;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    font-size:1rem;
+
     font-weight:600;
-    color:#00c8ff;
-    margin-bottom:30px;
+
+    border:1px solid rgba(255,255,255,.3);
+
 }
 
 .hero h1{
