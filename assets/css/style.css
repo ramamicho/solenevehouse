@@ -174,27 +174,13 @@ LOGO
 }
 
 .logo-text h2{
-
-    font-size:2rem;
-
-    color:var(--primary);
-
-    line-height:1;
-
-    margin-bottom:6px;
-
+    font-size: 2rem;
+    margin: 0;
 }
 
 .logo-text span{
-
-    color:var(--accent);
-
-    letter-spacing:3px;
-
-    font-size:.82rem;
-
-    text-transform:uppercase;
-
+    font-size: 0.9rem;
+    letter-spacing: 3px;
 }
 
 /*==========================
