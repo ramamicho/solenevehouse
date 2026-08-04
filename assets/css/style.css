@@ -258,17 +258,21 @@ MENU MOBILE
 
 .menu-toggle{
 
-    display:none;
+    width:45px;
 
-    font-size:34px;
-
-    background:none;
+    height:45px;
 
     border:none;
 
+    background:#8b6f47;
+
+    color:white;
+
+    border-radius:10px;
+
     cursor:pointer;
 
-    color:var(--primary);
+    font-size:22px;
 
 }
 
