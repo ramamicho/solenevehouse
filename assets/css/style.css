@@ -200,23 +200,15 @@ MENU
 
 .navbar ul{
 
-    display:flex;
-
-    gap:36px;
-
-    align-items:center;
+    gap:25px;
 
 }
 
 .navbar a{
 
-    color:var(--text);
+    font-size:15px;
 
-    font-weight:600;
-
-    transition:var(--transition);
-
-    position:relative;
+    font-weight:500;
 
 }
 
