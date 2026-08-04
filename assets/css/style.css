@@ -133,54 +133,32 @@ LOGO
 ==========================*/
 
 .logo{
-
     display:flex;
-
     align-items:center;
-
     gap:18px;
-
+    text-decoration:none;
 }
 
 .logo img{
-    width: 100px;
-    height: 100px;
-}
-
-.logo h2{
-
-    font-size:20px;
-
-}
-
-.logo span{
-
-    font-size:12px;
-
-}
-
-.logo img:hover{
-
-    transform:scale(1.05);
-
-}
-
-.logo-text{
-
-    display:flex;
-
-    flex-direction:column;
-
+    width:95px;
+    height:95px;
+    object-fit:contain;
 }
 
 .logo-text h2{
-    font-size: 2rem;
-    margin: 0;
+    font-size:3rem;
+    font-weight:700;
+    margin:0;
+    line-height:1;
 }
 
 .logo-text span{
-    font-size: 0.9rem;
-    letter-spacing: 3px;
+    display:block;
+    margin-top:8px;
+    font-size:1rem;
+    letter-spacing:6px;
+    color:#b08b57;
+    text-transform:uppercase;
 }
 
 /*==========================
