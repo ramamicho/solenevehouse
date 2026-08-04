@@ -361,9 +361,15 @@ MENU MOBILE
 
 .hero{
 
-    min-height:100vh;
+    position: relative;
 
-    padding-top:170px;
+    min-height: 100vh;
+
+    background: url("../images/cover.jpeg") center center/cover no-repeat;
+
+    display: flex;
+
+    align-items: center;
 
 }
 
@@ -375,7 +381,7 @@ MENU MOBILE
 
     inset:0;
 
-    background:rgba(0,0,0,.35);
+    background:rgba(0,0,0,.15);
 
 }
 
