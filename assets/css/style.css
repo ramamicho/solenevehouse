@@ -351,21 +351,7 @@ MENU MOBILE
 
     position:relative;
 
-    display:flex;
-
-    align-items:center;
-
-    min-height:100vh;
-
-    color:#fff;
-
-    overflow:hidden;
-
-    background:url("../images/hero.jpeg") center center/cover no-repeat;
-
 }
-
-/* Velo scuro per rendere leggibile il testo */
 
 .hero::before{
 
@@ -375,14 +361,7 @@ MENU MOBILE
 
     inset:0;
 
-    background:linear-gradient(
-        90deg,
-        rgba(0,0,0,.55) 0%,
-        rgba(0,0,0,.30) 45%,
-        rgba(0,0,0,.08) 100%
-    );
-
-    z-index:1;
+    background:rgba(0,0,0,.35);
 
 }
 
@@ -391,8 +370,6 @@ MENU MOBILE
     position:relative;
 
     z-index:2;
-
-    max-width:680px;
 
 }
 
