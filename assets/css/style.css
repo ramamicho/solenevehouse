@@ -357,17 +357,13 @@ MENU MOBILE
 }
 
 .hero-location{
-
-    display:inline-block;
-
-    margin-bottom:20px;
-
-    color:#49b8ff;
-
-    font-size:18px;
-
+    display:block;
+    width:100%;
+    text-align:right;
+    font-size:1.2rem;
     font-weight:600;
-
+    color:#00c8ff;
+    margin-bottom:30px;
 }
 
 .hero h1{
