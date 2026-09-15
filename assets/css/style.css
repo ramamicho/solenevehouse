@@ -139,7 +139,7 @@ LOGO
 }
 
 .logo img {
-    width: 180px !important;
+    width: 160px !important;
     height: auto !important;
     max-width: none !important;
     object-fit: contain;
