@@ -300,11 +300,12 @@ MENU MOBILE
 
     }
 
-    .logo img{
-
-        height:65px;
-
-    }
+   .logo img{
+    width:100px !important;
+    height:auto !important;
+    max-width:none !important;
+    object-fit:contain;
+}
 
     .logo-text h2{
 
