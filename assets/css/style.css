@@ -132,21 +132,29 @@ HEADER
 LOGO
 ==========================*/
 
-.logo {
-    position: relative;
-    left: -15px;
-    flex-shrink: 0;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    text-decoration:none;
+    flex-shrink:0;
 }
 
-.logo img {
-    width: 160px !important;
-    height: auto !important;
-    max-width: none !important;
-    object-fit: contain;
+.logo img{
+    width:150px !important;
+    height:auto !important;
+    max-width:none !important;
+    object-fit:contain;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .logo-text h2{
-    font-size:3rem;
+    font-size:2.2rem;
     font-weight:700;
     margin:0;
     line-height:1;
@@ -154,9 +162,9 @@ LOGO
 
 .logo-text span{
     display:block;
-    margin-top:8px;
-    font-size:1rem;
-    letter-spacing:6px;
+    margin-top:6px;
+    font-size:.85rem;
+    letter-spacing:4px;
     color:#b08b57;
     text-transform:uppercase;
 }
@@ -299,27 +307,19 @@ MENU MOBILE
 
     }
 
-.logo {
-    left: -8px;
+.logo img{
+    width:95px !important;
+    height:auto !important;
 }
 
-.logo img {
-    width: 125px !important;
-    height: auto !important;
-    max-width: none !important;
+.logo-text h2{
+    font-size:1.35rem;
 }
 
-    .logo-text h2{
-
-        font-size:1.35rem;
-
-    }
-
-    .logo-text span{
-
-        font-size:.70rem;
-
-    }
+.logo-text span{
+    font-size:.65rem;
+    letter-spacing:2px;
+}
 
 }
 /*=====================================================
