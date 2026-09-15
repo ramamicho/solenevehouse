@@ -132,17 +132,17 @@ HEADER
 LOGO
 ==========================*/
 
-.logo{
+.logo {
     position: relative;
     left: -15px;
     flex-shrink: 0;
 }
 
-.logo img{
-    width:180px !important;
-    height:auto !important;
-    max-width:none !important;
-    object-fit:contain;
+.logo img {
+    width: 180px !important;
+    height: auto !important;
+    max-width: none !important;
+    object-fit: contain;
 }
 
 .logo-text h2{
@@ -299,15 +299,14 @@ MENU MOBILE
 
     }
 
-.logo{
-    position: relative;
+.logo {
     left: -8px;
 }
 
-.logo img{
-    width:125px !important;
-    height:auto !important;
-    max-width:none !important;
+.logo img {
+    width: 125px !important;
+    height: auto !important;
+    max-width: none !important;
 }
 
     .logo-text h2{
