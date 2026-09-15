@@ -133,14 +133,13 @@ LOGO
 ==========================*/
 
 .logo{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    text-decoration:none;
+    position: relative;
+    left: -15px;
+    flex-shrink: 0;
 }
 
 .logo img{
-    width:170px !important;
+    width:180px !important;
     height:auto !important;
     max-width:none !important;
     object-fit:contain;
